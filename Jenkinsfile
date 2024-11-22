@@ -12,9 +12,9 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Setting up Python environment and installing dependencies...'
-                //bat 'python -m venv venv'
-                //bat 'venv\\Scripts\\activate && pip install -r requirements.txt'
-                bat 'pip install -r requirements.txt'
+                bat 'python -m venv venv'
+                bat 'venv\\Scripts\\activate && pip install -r requirements.txt'
+                //bat 'pip install -r requirements.txt'
             }
         }
 
